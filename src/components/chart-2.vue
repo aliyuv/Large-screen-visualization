@@ -20,12 +20,6 @@ export default {
 
     myChart.setOption(createEchartsOptions({
       ...baseEchartOptions,
-      grid: {
-        x: px(100),
-        y: px(40),
-        x2: px(40),
-        y2: px(40),
-      },
       xAxis: {
         type: 'value',
         boundaryGap: [0, 0.01]
