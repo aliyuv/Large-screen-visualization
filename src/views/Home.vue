@@ -4,7 +4,7 @@
       <header :style="{backgroundImage:`url(${require('../assets/img/header.png')})`}"></header>
       <main>
         <section class="section1">
-          <div className="bordered 管辖统计">
+          <div class="bordered 管辖统计">
             <h2>案发派出所管辖统计</h2>
             <div ref="divRef" class="chart">
             </div>
