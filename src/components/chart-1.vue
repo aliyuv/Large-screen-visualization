@@ -9,8 +9,9 @@
 
 <script>
 import * as echarts from 'echarts';
-
-const px = (n) => n / 2420 * window.pageWidth;
+// import {px} from '@/shared/px';
+// import {baseEchartOptions} from '@/shared/base-echart-options';
+import {createEchartsOptions} from '@/shared/create-echarts-options';
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -18,13 +19,8 @@ export default {
   mounted() {
     const divRef = this.$refs.divRef;
     let myChart = echarts.init(divRef);
-    myChart.setOption({
-      textStyle: {
-        fontSize: px(12),
-        color: '#79839E'
-      },
-      title: {show: false},
-      legend: {show: false},
+
+    myChart.setOption(createEchartsOptions({
       xAxis: {
         data: ['兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区', '兰州新区'],
         axisTick: {show: false},
@@ -32,7 +28,6 @@ export default {
           lineStyle: {color: '#083B70'}
         },
         axisLabel: {
-          fontSize: px(12),
           formatter(val) {
             if (val.length > 2) {
               const array = val.split('');
@@ -44,29 +39,20 @@ export default {
           }
         },
       },
-      grid: {
-        x: px(40),
-        y: px(40),
-        x2: px(40),
-        y2: px(40),
-      },
+
       yAxis: {
         splitLine: {show: false},
         axisLine: {
           show: true,
           lineStyle: {color: '#083B70'}
-        },
-        axisLabel: {
-          fontSize: px(12)
         }
       },
       series: [{
         type: 'bar',
         data: [10, 20, 36, 41, 15, 26, 37, 18, 29]
       }]
-    });
+    }));
   }
-
 }
 </script>
 
