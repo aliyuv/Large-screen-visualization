@@ -8,7 +8,7 @@
           <chart2/>
         </section>
         <section class="bordered section2">
-          <chart3/>
+          <chart3 class="mb"/>
           <chart4/>
         </section>
         <section class="bordered section3">
@@ -16,6 +16,14 @@
         </section>
         <section class="bordered section4">
           <chart6/>
+          <div class="bordered 年龄段">
+            <h2>犯罪人员年龄段分布</h2>
+            <div class="charts">
+              <chart7 class="mb"/>
+              <chart8/>
+              <chart9/>
+            </div>
+          </div>
         </section>
         <section class="bordered section5"></section>
       </main>
@@ -34,14 +42,21 @@ import chart3 from "@/components/chart-3";
 import chart4 from "@/components/chart-4";
 import chart5 from "@/components/chart-5";
 import chart6 from "@/components/chart-6";
+import chart7 from "@/components/chart-7";
+import chart8 from "@/components/chart-8";
+import chart9 from "@/components/chart-9";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Home",
-  components: {chart1, chart2, chart3, chart4, chart5, chart6}
+  components: {chart1, chart2, chart3, chart4, chart5, chart6, chart7, chart8, chart9}
 }
 </script>
 
 <style scoped lang="scss">
 @import "../assets/style/home/home";
+
+.mb {
+  margin-bottom: 10px;
+}
 </style>
