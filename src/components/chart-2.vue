@@ -9,7 +9,6 @@
 
 <script>
 import * as echarts from 'echarts';
-import {baseEchartOptions} from "@/shared/base-echart-options";
 import {createEchartsOptions} from "@/shared/create-echarts-options";
 // import {px} from "@/shared/px";
 
