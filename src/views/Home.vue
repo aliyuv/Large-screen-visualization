@@ -4,18 +4,20 @@
       <header :style="{backgroundImage:`url(${require('../assets/img/header.png')})`}"></header>
       <main>
         <section class="section1">
-          <chart1 class="chart1"/>
-          <chart2 class="chart2"/>
+          <chart1/>
+          <chart2/>
         </section>
         <section class="bordered section2">
           <chart3/>
           <chart4/>
         </section>
-        <section className="bordered section3">
+        <section class="bordered section3">
           <chart5/>
         </section>
-        <section className="bordered section4"></section>
-        <section className="bordered section5"></section>
+        <section class="bordered section4">
+          <chart6/>
+        </section>
+        <section class="bordered section5"></section>
       </main>
       <footer>
         &copy; By Aliyu 2017-{{ new Date().getFullYear() }}
@@ -31,18 +33,15 @@ import chart2 from "@/components/chart-2";
 import chart3 from "@/components/chart-3";
 import chart4 from "@/components/chart-4";
 import chart5 from "@/components/chart-5";
+import chart6 from "@/components/chart-6";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Home",
-  components: {chart1, chart2, chart3, chart4, chart5}
+  components: {chart1, chart2, chart3, chart4, chart5, chart6}
 }
 </script>
 
 <style scoped lang="scss">
 @import "../assets/style/home/home";
-
-.chart1 {
-  margin-bottom: 10px;
-}
 </style>
