@@ -25,7 +25,15 @@
             </div>
           </div>
         </section>
-        <section class="bordered section5"></section>
+        <section class="bordered section5">
+          <div class="bordered row1 案发类型">
+            <h2>案发类型统计</h2>
+            <div class="charts">
+              <chart10/>
+              <chart11/>
+            </div>
+          </div>
+        </section>
       </main>
       <footer>
         &copy; By Aliyu 2017-{{ new Date().getFullYear() }}
@@ -45,11 +53,13 @@ import chart6 from "@/components/chart-6";
 import chart7 from "@/components/chart-7";
 import chart8 from "@/components/chart-8";
 import chart9 from "@/components/chart-9";
+import chart10 from "@/components/chart-10";
+import chart11 from "@/components/chart-11";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Home",
-  components: {chart1, chart2, chart3, chart4, chart5, chart6, chart7, chart8, chart9}
+  components: {chart1, chart2, chart3, chart4, chart5, chart6, chart7, chart8, chart9, chart10, chart11}
 }
 </script>
 
