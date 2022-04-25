@@ -19,7 +19,6 @@ export default {
     let myChart = echarts.init(this.$refs.divRef);
 
     myChart.setOption(createEchartsOptions({
-      ...baseEchartOptions,
       xAxis: {
         type: 'value',
         boundaryGap: [0, 0.01]
