@@ -4,8 +4,8 @@
       <header :style="{backgroundImage:`url(${require('../assets/img/header.png')})`}"></header>
       <main>
         <section class="section1">
-          <chart1/>
-          <chart2/>
+          <chart1 class="chart1"/>
+          <chart2 class="chart2"/>
         </section>
         <section class="bordered section2">
         </section>
@@ -31,4 +31,7 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/style/home/home";
+.chart1{
+  margin-bottom: 10px;
+}
 </style>

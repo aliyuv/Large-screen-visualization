@@ -112,5 +112,8 @@ export default {
 </script>
 
 <style scoped>
-
+.chart {
+  width: 30vh;
+  height: 30vh;
+}
 </style>
