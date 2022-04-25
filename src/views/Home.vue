@@ -33,6 +33,15 @@
               <chart11/>
             </div>
           </div>
+          <div class="bordered row2 案发街道">
+            <h2>案发街道统计</h2>
+            <div class="charts">
+              <chart12/>
+            </div>
+          </div>
+          <div class="bordered row3 作案手段">
+            <h2>作案手段分析</h2>
+          </div>
         </section>
       </main>
       <footer>
@@ -55,11 +64,12 @@ import chart8 from "@/components/chart-8";
 import chart9 from "@/components/chart-9";
 import chart10 from "@/components/chart-10";
 import chart11 from "@/components/chart-11";
+import chart12 from "@/components/chart-12";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
   name: "Home",
-  components: {chart1, chart2, chart3, chart4, chart5, chart6, chart7, chart8, chart9, chart10, chart11}
+  components: {chart1, chart2, chart3, chart4, chart5, chart6, chart7, chart8, chart9, chart10, chart11, chart12}
 }
 </script>
 
