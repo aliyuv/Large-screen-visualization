@@ -1,11 +1,17 @@
 <template>
   <div>
-    你好
   <div class="home">
     <header :style="{backgroundImage:`url(${require('../assets/img/header.png')})`}"></header>
+    <main>
+      <section class="section1"></section>
+      <section class="section2"></section>
+      <section class="section3"></section>
+      <section class="section4"></section>
+      <section class="section5"></section>
+    </main>
   </div>
   </div>
-</template>s
+</template>
 
 <script>
 export default {

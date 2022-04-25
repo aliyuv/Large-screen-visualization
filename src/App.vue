@@ -15,8 +15,5 @@ export default {
 </script>
 
 <style>
-#app{
-  margin: 0 auto;
-  background: lightgreen;
-}
+
 </style>

@@ -19,4 +19,12 @@ body {
   font-family: $font-hei;
   font-size: 16px;
 }
-
+#app{
+  margin: 0 auto;
+  background: lightgreen;
+  display: flex;
+  flex-direction: column;
+}
+#app{
+  flex: 1;
+}
