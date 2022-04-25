@@ -42,7 +42,7 @@
           </div>
           <div class="bordered row3 作案手段">
             <h2>作案手段分析</h2>
-
+            <chart14/>
           </div>
         </section>
       </main>
@@ -68,6 +68,7 @@ import chart10 from "@/components/chart-10";
 import chart11 from "@/components/chart-11";
 import chart12 from "@/components/chart-12";
 import chart13 from "@/components/chart-13";
+import chart14 from "@/components/chart-14";
 
 export default {
   // eslint-disable-next-line vue/multi-word-component-names
@@ -85,7 +86,8 @@ export default {
     chart10,
     chart11,
     chart12,
-    chart13
+    chart13,
+    chart14
   }
 }
 </script>
