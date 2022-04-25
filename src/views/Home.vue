@@ -1,7 +1,9 @@
 <template>
   <div>
     你好
-  <div class="x"></div>
+  <div class="home">
+    <header :style="{backgroundImage:`url(${require('../assets/img/header.png')})`}"></header>
+  </div>
   </div>
 </template>s
 
