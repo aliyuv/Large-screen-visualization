@@ -7,6 +7,7 @@
           <div class="bordered 管辖统计">
             <h2>案发派出所管辖统计</h2>
             <div ref="divRef" class="chart">
+
             </div>
           </div>
         </section>
@@ -84,7 +85,8 @@ export default {
 
 <style scoped lang="scss">
 @import "../assets/style/home/home";
-.chart{
+
+.chart {
   height: 50vh;
 }
 </style>
