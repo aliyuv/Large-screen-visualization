@@ -1,6 +1,9 @@
 <template>
-  <div>你好</div>
-</template>
+  <div>
+    你好
+  <div class="x"></div>
+  </div>
+</template>s
 
 <script>
 export default {
@@ -9,6 +12,6 @@ export default {
 }
 </script>
 
-<style scoped>
-
+<style scoped lang="scss">
+@import "../assets/style/home/home";
 </style>
