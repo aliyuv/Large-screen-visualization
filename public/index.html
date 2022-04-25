@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport"
-            content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
     <title>大屏可视化项目</title>
-  </head>
-  <body>
-    <div id="app"></div>
-  </body>
+    <script>
+        const clientWidth = document.documentElement.clientWidth;
+        const clientHeight = document.documentElement.clientHeight;
+        const pageWidth = clientWidth / clientHeight > 16 / 9 ? clientHeight * (16 / 9) : clientWidth;
+        const pageHeight = pageWidth / (16 / 9);
+        const string = `
+    <style>
+    html{
+    font-size: ${pageWidth / 100}px;
+    }
+    </style>
+    `;
+        document.write(string);
+    </script>
+</head>
+<body>
+<div id="app"></div>
+<script>
+    const app = document.querySelector('#app');
+    app.style.width = pageWidth + 'px';
+    app.style.height = pageHeight + 'px';
+    app.style.marginTop = (clientHeight - pageHeight) / 2 + 'px';
+</script>
+</body>
 </html>

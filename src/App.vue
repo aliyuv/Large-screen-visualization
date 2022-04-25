@@ -14,8 +14,10 @@ export default {
 }
 </script>
 
-<style>
-#app {
-
+<style scoped>
+#app{
+  margin: 0 auto;
+  background: lightgreen;
+  border: 1px solid #000;
 }
 </style>
