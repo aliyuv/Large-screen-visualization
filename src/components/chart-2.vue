@@ -111,9 +111,7 @@ export default {
 }
 </script>
 
-<style scoped>
-.chart {
-  width: 30vh;
-  height: 30vh;
-}
+<style scoped lang="scss">
+@import "../assets/style/home/home";
+
 </style>

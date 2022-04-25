@@ -13,6 +13,9 @@
         <section className="bordered section4"></section>
         <section className="bordered section5"></section>
       </main>
+      <footer>
+        &copy; By Aliyu 2017-{{new Date().getFullYear()}}
+      </footer>
     </div>
   </div>
 </template>
